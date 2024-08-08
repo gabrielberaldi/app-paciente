@@ -1,0 +1,14 @@
+.content {
+  display: flex !important; 
+  flex-direction: row; 
+  justify-content: space-between;
+  gap: 15px;
+
+  &-main {
+    width: 70%;
+  }
+
+  &-actions {
+    width: 25%;
+  }
+}

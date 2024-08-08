@@ -1,0 +1,7 @@
+<div class="action-buttons" *ngIf="!hidden">
+  <button class="btn btn-success" (click)="onSave()">Salvar</button>
+  @if(id.value){
+    <button class="btn btn-danger" (click)="onDelete()" >Excluir</button>
+  }
+  <button class="btn btn-light-info" (click)="onBack()">Voltar</button>
+</div>

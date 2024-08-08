@@ -1,0 +1,74 @@
+<mat-card-content [formGroup]="anamneseForm" class="content">
+
+  <div class="content-main">
+   
+    <mat-form-field>
+      <mat-label>Queixa Principal</mat-label>
+      <textarea matInput formControlName="queixaPrincipal"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Histórico de Gestação</mat-label>
+      <textarea matInput formControlName="historicoGestacao"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Amamentação</mat-label>
+      <textarea matInput formControlName="amamentacao"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Exames de Nascimento</mat-label>
+      <textarea matInput formControlName="examesNascimento"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Alimentação</mat-label>
+      <textarea matInput formControlName="alimentacao"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Desenvolvimento Motor</mat-label>
+      <textarea matInput formControlName="desenvolvimentoMotor"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Desenvolvimento da Linguagem</mat-label>
+      <textarea matInput formControlName="desenvolvimentoLinguagem"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Comunicação no Ambiente Social</mat-label>
+      <textarea matInput formControlName="comunicacaoAmbienteSocial"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Doenças e Complicações</mat-label>
+      <textarea matInput formControlName="doencasComplicacoes"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Sono</mat-label>
+      <textarea matInput formControlName="sono"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Histórico Familiar</mat-label>
+      <textarea matInput formControlName="historicoFamiliar"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Comportamento</mat-label>
+      <textarea matInput formControlName="comportamento"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Rotina Diária</mat-label>
+      <textarea matInput formControlName="rotinaDiaria"></textarea>
+    </mat-form-field>
+    
+  </div>
+
+  <app-action-buttons class="content-actions" [form]="formulario" (save)="onSave()" (delete)="onDelete()" (back)="onBack()"></app-action-buttons>
+
+</mat-card-content>

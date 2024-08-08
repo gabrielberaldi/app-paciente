@@ -1,0 +1,56 @@
+<mat-card>
+  <mat-card-content>
+    <mat-tab-group mat-stretch-tabs="false">
+      <mat-tab label="Dados gerais">
+        <mat-card-content [formGroup]="pacienteForm" class="content">
+
+          <div class="content-main">
+            <mat-form-field>
+              <mat-label>Nome Completo</mat-label>
+              <input type="text" matInput formControlName="nomeCompleto">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Sexo</mat-label>
+              <mat-select formControlName="sexo">
+                @for (option of options; track option) {
+                <mat-option [value]="option.value">
+                  {{option.text}}
+                </mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Data de nascimento</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="dataNascimento">
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Idade</mat-label>
+              <input type="number" matInput formControlName="idade">
+            </mat-form-field>
+          </div>
+
+          <app-action-buttons class="content-actions" [form]="pacienteForm" (save)="onSave()" (delete)="onDelete()"
+            (back)="onBack()"></app-action-buttons>
+
+        </mat-card-content>
+      </mat-tab>
+      <mat-tab label="Anamnese">
+        <mat-card-content>
+          <app-anamnese [formulario]="pacienteForm"></app-anamnese>
+        </mat-card-content>
+      </mat-tab>
+
+      <mat-tab label="Documentos">
+        <mat-card-content>
+          <app-anamnese [formulario]="pacienteForm"></app-anamnese>
+        </mat-card-content>
+      </mat-tab>
+
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

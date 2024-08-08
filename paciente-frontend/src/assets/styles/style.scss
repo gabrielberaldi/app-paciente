@@ -1,0 +1,8 @@
+@import "./variables";
+@import "./global";
+@import "./mixins";
+@import "./core/app";
+@import './grid/grid';
+@import "./layouts/layouts";
+@import "./components/components";
+@import 'node_modules/ngx-toastr/toastr.css';

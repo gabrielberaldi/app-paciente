@@ -1,0 +1,57 @@
+# Geral
+.DS_Store
+
+
+# Node.js (Angular - paciente-frontend)
+paciente-frontend/node_modules/
+paciente-frontend/dist/
+paciente-frontend/build/
+paciente-frontend/.angular/
+paciente-frontend/.angular/cache/
+paciente-frontend/.angular/cache/**
+
+# Angular environment files
+paciente-frontend/src/environments/environment*.ts
+
+# Logs
+paciente-frontend/logs/
+paciente-frontend/*.log
+
+# IDE config files
+paciente-frontend/.idea/
+paciente-frontend/.vscode/
+paciente-frontend/.vscode/*
+paciente-frontend/.editorconfig
+
+# C# (paciente-backend)
+paciente-backend/[Bb]in/
+paciente-backend/[Oo]bj/
+paciente-backend/*.dll
+paciente-backend/*.pdb
+paciente-backend/*.exe
+paciente-backend/*.app
+paciente-backend/*.so
+paciente-backend/*.dylib
+paciente-backend/*.log
+paciente-backend/*.csproj.user
+paciente-backend/*.csproj.vspscc
+paciente-backend/*.csproj.webinfo
+paciente-backend/*.dbmdl
+paciente-backend/*.dbproj.schemaview
+paciente-backend/*.pfx
+paciente-backend/*.publishsettings
+paciente-backend/appsettings.json
+
+# Entity Framework
+paciente-backend/*.edmx
+paciente-backend/*.edmx.diagram
+paciente-backend/*.edmx.sql
+paciente-backend/*.edmx.msl
+paciente-backend/*.edmx.cs
+paciente-backend/*.edmx.diagram.layout
+
+# VS Code
+paciente-backend/.vscode/
+paciente-backend/.vscode/*
+
+

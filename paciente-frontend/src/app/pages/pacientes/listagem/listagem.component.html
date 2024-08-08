@@ -1,0 +1,9 @@
+<app-table [data]="data"
+ [displayedColumns]="displayedColumns" 
+ [length]="count" 
+ [title]="title"
+ [buttons]="buttons()"
+ [actionButtons]="actionButtons()"
+ (pageChanged)="pageChanged($event)"
+ (search)="onSearch($event)">
+</app-table>
